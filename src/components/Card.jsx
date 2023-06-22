@@ -1,4 +1,6 @@
 import React from 'react'
+import Avatar from './Avatar'
+import Detail from './Detail'
 
 const Card = (props) => {
   return (
@@ -7,14 +9,11 @@ const Card = (props) => {
         <div className='card'>
             <div className='top'>
                 <h2 className='name'>{props.name}</h2>
-                <img 
-                className='circle-img'
-                src={props.pic} alt="avatar.png" />
+                <Avatar img={props.pic} />
             </div>
-            <div className='bottom'>
-                <p className='info'>{props.phone}</p>
-                <p className='info'>{props.email}</p>
-            </div>
+            <Detail detailInfo={props.phone} />
+            <Detail detailInfo={props.email} />
+            
         </div>
     </div>
   )

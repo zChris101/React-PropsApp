@@ -3,13 +3,14 @@ import "./styles.css";
 import Card from './components/Card';
 import Contacts from './components/contacts';
 
-//commented 
+
 export default function App() {
 
-  //console.log(Contacts);
+  
   return (
     <div className="App">
-      <h1 className='heading'>My Contacts</h1>
+      <h1 className='heading'>My Contacts</h1> 
+
       <Card
       name= {Contacts[0].name}
       pic = {Contacts[0].imgURL}
